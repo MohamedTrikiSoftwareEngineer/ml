@@ -1,0 +1,8 @@
+# Build the Docker image
+docker build -t titanic-streamlit-app .
+
+# Run the container
+docker run -p 8501:8501 titanic-streamlit-app
+
+# Or run in detached mode
+docker run -d -p 8501:8501 --name titanic-app titanic-streamlit-app
